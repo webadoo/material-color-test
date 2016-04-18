@@ -10,7 +10,9 @@
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="assets/theme.css"/>
     <link rel="stylesheet" href="assets/app.css"/>
+
 
     <style type="text/css">
         /**
@@ -25,12 +27,12 @@
 
   <body ng-app="starterApp" layout="row" ng-controller="UserController as ul" ng-cloak >
 
-  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
+  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2 my-toolbar"
       md-component-id="left"
       ng-click="ul.toggleList()" aria-label="Show User List"
       md-is-locked-open="$mdMedia('gt-sm')">
 
-    <md-toolbar class="md-whiteframe-z1">
+    <md-toolbar class="md-whiteframe-z1 my-toolbar">
       <h3>Users</h3>
     </md-toolbar>
 
